@@ -15,10 +15,10 @@ count = 0
 while ans != guess:
     print('輸入',bot,'~',top,'之間整數猜數：')
     guess = int(input())
+    count += 1
     if ans == guess:
         print('猜對了')
-    count += 1
-    if count == 5:
+    elif count == 5:
         print('已猜錯五次')
         break
     if guess > ans :
